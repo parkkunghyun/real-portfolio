@@ -84,7 +84,7 @@ const Lingualens = ({ isDarkMode }) => {
             </motion.div>
 
             
-            <div className='flex flex-col items-center gap-8 mt-12 md:flex-row'>
+            <div className='flex flex-col items-center gap-8 mt-8 md:flex-row'>
                 <motion.a
                     target='blank'
                     initial={{ y: 30, opacity: 0 }}

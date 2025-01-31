@@ -71,7 +71,7 @@ const FullStackProjects = ({ isDarkMode }) => {
                                 className='w-6 text-white' />
                         </a>
                         <a href="https://supabase-todo-266457465664.us-central1.run.app/" target='blank'
-                            className='flex items-center hover:shadow-black duration-300 justify-center gap-2 px-10 py-3 bg-white border border-gray-500 rounded-full dark:text-black'
+                            className='flex text-sm  items-center hover:shadow-black duration-300 justify-center gap-2 px-10 py-3 bg-white border border-gray-500 rounded-full dark:text-black'
                         >사이트가기</a>
                     </div>
                 </motion.div>
@@ -104,7 +104,7 @@ const FullStackProjects = ({ isDarkMode }) => {
                                 className='w-6 text-white' />
                         </a>
                         <a href="https://mini-image-266457465664.us-central1.run.app/" target='blank'
-                            className='flex items-center hover:shadow-black duration-300 justify-center gap-2 px-10 py-3 bg-white border border-gray-500 rounded-full dark:text-black'
+                            className='flex text-sm  items-center hover:shadow-black duration-300 justify-center gap-2 px-10 py-3 bg-white border border-gray-500 rounded-full dark:text-black'
                         >사이트가기</a>
                     </div>
                 </motion.div>
@@ -138,7 +138,7 @@ const FullStackProjects = ({ isDarkMode }) => {
                                 className='w-6 text-white' />
                         </a>
                         <a href="https://fir-skilup.web.app/" target='blank'
-                            className='flex items-center hover:shadow-black duration-300 justify-center gap-2 px-10 py-3 bg-white border border-gray-500 rounded-full dark:text-black'
+                            className='flex text-sm items-center hover:shadow-black duration-300 justify-center gap-2 px-8 py-3 bg-white border border-gray-500 rounded-full dark:text-black'
                         >사이트가기</a>
                     </div>
                 </motion.div>
