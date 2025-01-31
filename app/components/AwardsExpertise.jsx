@@ -12,7 +12,7 @@ const AwardsExpertise = ({isDarkMode}) => {
               initial={{ opacity: 0, y: -20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.5 }}
-              className='text-4xl font-bold text-center font-Ovo mb-4'
+              className='text-3xl font-bold text-center font-Ovo mb-4'
           >
               수상과 Experience 그리고 Skill & Tools
           </motion.h2>
@@ -24,7 +24,7 @@ const AwardsExpertise = ({isDarkMode}) => {
                     transition={{ duration: 0.5, delay: 0.8 }}
                     className='flex flex-col'
                     >
-                  <h4 className='font-bold text-2xl mb-2 flex items-center gap-2'>
+                  <h4 className='font-bold text-xl mb-2 flex items-center gap-2'>
                       <Image src={"/images/award.png"} alt='awards' width={40} height={40} /> Awards</h4>
                   <div className='flex flex-col ml-4'>
                       <p className='flex items-center gap-1 font-bold mt-2'>
@@ -60,7 +60,7 @@ const AwardsExpertise = ({isDarkMode}) => {
                     transition={{ duration: 0.5, delay: 0.8 }}
                     className='flex flex-col '
                 >
-                    <h4 className='font-bold text-2xl mb-2 flex items-center gap-2'>
+                    <h4 className='font-bold text-xl mb-2 flex items-center gap-2'>
                         <Image src={"/images/experience.png"} alt='awards' width={40} height={40} /> Experience
                     </h4>
                     <div className='flex flex-col ml-4'>
@@ -98,7 +98,7 @@ const AwardsExpertise = ({isDarkMode}) => {
                     transition={{ duration: 0.5, delay: 1.2 }}
                     className='flex flex-col mt-4'
                 >
-                    <h4 className='font-bold text-2xl m-2 flex items-center gap-2'>
+                    <h4 className='font-bold text-xl m-2 flex items-center gap-2'>
                         <Image src={"/images/skill.png"} alt='awards' width={40} height={40} /> Skill & Tools
                     </h4>
 
@@ -130,7 +130,7 @@ const AwardsExpertise = ({isDarkMode}) => {
                                 <Image src={"/images/icons/icon_nodejs.svg"} alt='html' width={25} height={20} />
                             </div>
                             <div className='flex items-center justify-center w-12 duration-500 border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 sm:2-14 aspect-square'>
-                                <Image src={"/images/icons/fastApi.svg"} alt='html' width={30} height={20} />
+                                <Image src={"/images/icons/FastAPI.svg"} alt='html' width={30} height={20} />
                             </div>
                             <div className='flex items-center justify-center w-12 duration-500 border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 sm:2-14 aspect-square'>
                                 <Image src={"/images/icons/icon_firbase.svg"} alt='html' width={30} height={20} />

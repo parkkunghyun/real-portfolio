@@ -60,7 +60,7 @@ const Lingualens = ({ isDarkMode }) => {
                 <Image 
                     src={images[currentImageIndex]} 
                     alt='Changing Image' 
-                    width={700} // 원하는 크기로 조정
+                    width={600} // 원하는 크기로 조정
                     height={400} 
                     className="rounded-lg shadow-lg"
                 />
@@ -75,10 +75,10 @@ const Lingualens = ({ isDarkMode }) => {
 
                     <div className='flex flex-col gap-2'>
                     <h2 className='font-bold mt-4 text-xl'>주요기능 및 특징</h2>
-                    <p>서버사이드에서 Google API를 호출하여 클라이언트와의 분리된 구조로 보안을 강화하고, API 호출을 최적화합니다.</p>
-                    <p>Tanstack Query를 사용해 번역 API 호출을 효율적으로 관리하고, 에러 처리를 간편하게 처리하여 사용자 경험을 개선합니다.</p>
-                    <p>FastAPI로 이미지 분석 및 번역 처리 백엔드를 구축하고, Cloud Run을 통해 필요 시 서버를 실행하여 비용 효율적인 서비스를 제공합니다.</p>
-                    <p>GitHub Actions를 사용하여 프론트엔드를 자동 빌드하고, Cloud Run에 배포하여 지속적인 배포 환경을 구현합니다.</p>
+                    <p className='text-sm'>서버사이드에서 Google API를 호출하여 클라이언트와의 분리된 구조로 보안을 강화하고, API 호출을 최적화합니다.</p>
+                    <p className='text-sm'>Tanstack Query를 사용해 번역 API 호출을 효율적으로 관리하고, 에러 처리를 간편하게 처리하여 사용자 경험을 개선합니다.</p>
+                    <p className='text-sm'>FastAPI로 이미지 분석 및 번역 처리 백엔드를 구축하고, Cloud Run을 통해 필요 시 서버를 실행하여 비용 효율적인 서비스를 제공합니다.</p>
+                    <p className='text-sm'>GitHub Actions를 사용하여 프론트엔드를 자동 빌드하고, Cloud Run에 배포하여 지속적인 배포 환경을 구현합니다.</p>
                     </div>
                 </motion.div>
             </motion.div>
@@ -90,7 +90,7 @@ const Lingualens = ({ isDarkMode }) => {
                     initial={{ y: 30, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
                     transition={{duration: 0.6, delay: 1}}
-                    className='flex w-[300px] hover:px-12 hover:py-4 duration-300   items-center hover:scale-110 duration-200  gap-2 px-10 py-3 text-white bg-black border border-white rounded-full dark:bg-transparent'
+                    className='flex w-[300px] hover:px-12 hover:py-4  items-center hover:scale-110 duration-200  gap-2 px-10 py-3 text-white bg-black border border-white rounded-full dark:bg-transparent'
                     href="https://github.com/parkkunghyun/translate-service-gcp">
                         <span>Github에서 자세히 보기</span>
                         <Image width={150} height={100} src={"/images/github-mark-white.png"} alt='right arrow'

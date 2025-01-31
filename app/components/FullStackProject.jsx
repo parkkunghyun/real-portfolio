@@ -33,7 +33,7 @@ const FullStackProjects = ({ isDarkMode }) => {
                 initial={{ opacity: 0, y:-20 }}
                 whileInView={{opacity: 1, y:0}}
                 transition={{duration: 0.5, delay: 0.3 }}
-                className='my-8 text-lg text-center font-Ovo'>
+                className='my-8 text-md text-center font-Ovo'>
                 Supabase와 Firebase를 활용한 풀스택 프로젝트를 개발하며, 단순한 UI/UX 구현을 넘어 서비스의 아키텍처와 데이터 흐름을 깊이 이해하게 되었습니다. <br />
                 Supabase프로젝트는 Github action + Cloud run으로 CI/CD를 했으며, Firebase 프로젝트의 경우 Firebase Hosting을 이용해 배포했습니다.
             </motion.h4>
@@ -42,7 +42,7 @@ const FullStackProjects = ({ isDarkMode }) => {
                 initial={{ opacity: 0 }}
                 whileInView={{opacity: 1}}
                 transition={{ duration: 1, delay: 0.5 }}
-                className='w-full mt-8 flex flex-col xl:flex-row items-center gap-4'>
+                className='w-full mt-8 mx-auto flex flex-col xl:flex-row items-center gap-6'>
 
                 <motion.div
                     initial={{ opacity: 0 }}
@@ -50,7 +50,7 @@ const FullStackProjects = ({ isDarkMode }) => {
                     transition={{ duration: 1, delay: 0.8 }}
                     className='border-2 rounded-md shadow-black p-2 mt-8 flex flex-col items-center gap-2'
                 >
-                    <div className="relative w-[400px] h-[400px]">
+                    <div className="relative w-[350px] h-[350px]">
                         <Image
                             className='rounded-md mb-2 aspect-square'
                             src={"/images/supa-1.png"}
@@ -83,7 +83,7 @@ const FullStackProjects = ({ isDarkMode }) => {
                     transition={{ duration: 1, delay: 0.8 }}
                     className='border-2 rounded-md shadow-black p-2 mt-8 flex flex-col items-center gap-2'
                 >
-                    <div className="relative w-[400px] h-[400px]">
+                    <div className="relative w-[350px] h-[350px]">
                         <Image
                             className='rounded-md mb-2 aspect-square'
                             src={"/images/supa-2.png"}
@@ -116,13 +116,13 @@ const FullStackProjects = ({ isDarkMode }) => {
                     transition={{ duration: 1, delay: 0.8 }}
                     className='border-2 rounded-md shadow-black p-2 mt-8 flex flex-col items-center gap-2'
                 >
-                    <div className="relative w-[400px] h-[400px]">
+                    <div className="relative w-[350px] h-[350px]">
                         <Image
                             className='rounded-md mb-2 aspect-square'
                             src={"/images/fire-1.png"}
                             alt='supabase todo'
-                            width={600}
-                            height={400}
+                            width={400}
+                            height={200}
                         />
                         <div className="absolute inset-0 p-1 flex items-center justify-center bg-gray-800 bg-opacity-80 text-white text-lg font-bold opacity-0 transition-opacity duration-300 hover:opacity-100">
                         구글 드라이브와 같은 직관적인 파일 저장 시스템에서 영감을 받아, Firebase 기반의 개인화된 파일 관리 시스템을 개발했습니다. <br /> <br />
