@@ -24,21 +24,21 @@ const Finish = () => {
                 initial={{ y: -20, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
-                className='flex items-end gap-2 mb-3 text-2xl font-Ovo font-bold md:text-4xl'>봐주셔서 감사합니다 :)<Image src={assets.hand_icon} alt='hand-icon' className='w-6' />
+                className='flex items-end gap-2 mb-3 text-4xl font-Ovo font-bold md:text-4xl'>봐주셔서 감사합니다 :)<Image src={assets.hand_icon} alt='hand-icon' className='w-6' />
             </motion.h3>
             
             <motion.p
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{duration: 0.6, delay: 0.7}}
-              className='max-w-3xl mx-auto font-Ovo'>능동적이고 긍정적인 태도로, 팀원들과 협력하여 목표를 달성하는 것을 즐깁니다.
+              className='max-w-3xl text-xl mx-auto font-Ovo'>능동적이고 긍정적인 태도로, 팀원들과 협력하여 목표를 달성하는 것을 즐깁니다.
             </motion.p>
             
             <motion.p
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{duration: 0.6, delay: 0.7}}
-              className='max-w-3xl mx-auto font-Ovo'>더 나은 가치를 창출하는 인재로 성장하기 위해 계속 발전해 나가겠습니다.
+              className='max-w-3xl text-xl mx-auto font-Ovo'>더 나은 가치를 창출하는 인재로 성장하기 위해 계속 발전해 나가겠습니다.
             </motion.p>
         </div>
     )

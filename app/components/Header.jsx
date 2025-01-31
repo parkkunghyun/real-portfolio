@@ -40,24 +40,25 @@ const Header =  ({isDarkMode}) => {
             transition={{duration: 0.6, delay: 0.7}}
             className='max-w-3xl mx-auto font-Ovo'>AI와 Cloud 기술을 적극적으로 활용해  더 나은 사용자 경험을 제공하기 위해 끊임없이 노력하고 있습니다.</motion.p>
 
-        <div className='flex flex-col items-center gap-8 mt-8 sm:flex-row'>
+        <div className='flex flex-col  items-center gap-8 mt-8 sm:flex-row'>
               <motion.a
                   target='blank'
-                initial={{ y: 30, opacity: 0 }}
-                whileInView={{ y: 0, opacity: 1 }}
-                transition={{duration: 0.6, delay: 1}}
-                className='flex items-center hover:scale-110 duration-200  gap-2 px-10 py-3 text-white bg-black border border-white rounded-full dark:bg-transparent'
-                href="https://github.com/parkkunghyun">
+                    initial={{ y: 30, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{duration: 0.6, delay: 1}}
+                    className='flex items-center hover:px-12 hover:py-4 duration-300  gap-2 px-10 py-3 text-white bg-black border border-white rounded-full dark:bg-transparent'
+                    href="https://github.com/parkkunghyun">
                   <span>Github 둘러보기</span>
                   <Image width={150} height={100} src={"/images/github-mark-white.png"} alt='right arrow'
                 className='w-6  text-white' />
-            </motion.a>
+              </motion.a>
+              
             <motion.a
                 initial={{ y: 30, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{duration: 0.6, delay: 1.2}}
                 href="/resume.pdf" download
-                className='flex items-center gap-2 px-10 py-3 bg-white border border-gray-500 rounded-full dark:text-black'>my resume <Image src={assets.download_icon} alt='resume'
+                className='flex hover:shadow-black duration-300 items-center gap-2 px-10 py-3 bg-white border border-gray-500 rounded-full dark:text-black'>my resume <Image src={assets.download_icon} alt='resume'
                 className='w-4' />
             </motion.a>
     </div>

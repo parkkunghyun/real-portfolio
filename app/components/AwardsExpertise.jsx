@@ -5,9 +5,9 @@ import { motion } from 'motion/react';
 import { GiCalendarHalfYear } from "react-icons/gi";
 import { BiFoodMenu } from "react-icons/bi";
 
-const AwardsExpertise = () => {
+const AwardsExpertise = ({isDarkMode}) => {
     return (
-        <motion.div id='awardsexpertise' className='w-full flex flex-col items-center px-[12%] py-10 scroll-mt-18'>
+        <motion.div id='awardsexpertise' className='w-full flex flex-col items-center px-[12%] py-10 scroll-mt-18 mt-20'>
           <motion.h2
               initial={{ opacity: 0, y: -20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -16,7 +16,8 @@ const AwardsExpertise = () => {
           >
               수상과 Experience 그리고 Skill & Tools
           </motion.h2>
-          <motion.div className='mt-8 flex w-full justify-around items-center gap-8'>
+          
+            <motion.div className='mt-8 flex flex-col lg:flex-row w-full justify-around items-center gap-8'>
               <motion.div
                     initial={{ opacity: 0, y: -20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -88,20 +89,102 @@ const AwardsExpertise = () => {
                         </p>
                         <span className='ml-6'>2024.06 ~ 2024.08</span>
                     </div>
-                    </motion.div>
-            </motion.div>
+                </motion.div>
+                
 
-
-            <motion.div
+                <motion.div
                     initial={{ opacity: 0, y: -20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 1.2 }}
                     className='flex flex-col mt-4'
-            >
-                <h4 className='font-bold text-2xl m-2 flex items-center gap-2'>
-                        <Image src={"/images/experience.png"} alt='awards' width={40} height={40} /> Experience
+                >
+                    <h4 className='font-bold text-2xl m-2 flex items-center gap-2'>
+                        <Image src={"/images/skill.png"} alt='awards' width={40} height={40} /> Skill & Tools
                     </h4>
 
+                    <div>
+                        <h2 className='font-bold my-2'>Frontend</h2>
+                        <div className='flex items-center gap-2'>
+                            <div className='flex items-center justify-center w-12 duration-500 border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 sm:2-14 aspect-square'>
+                                <Image src={"/images/icons/icon_html.svg"} alt='html' width={25} height={20} />
+                            </div>
+                            <div className='flex items-center justify-center w-12 duration-500 border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 sm:2-14 aspect-square'>
+                                <Image src={"/images/icons/icon_css.svg"} alt='html' width={25} height={20} />
+                            </div>
+                            <div className='flex items-center justify-center w-12 duration-500 border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 sm:2-14 aspect-square'>
+                                <Image src={"/images/icons/icon_javascript.svg"} alt='html' width={40} height={20} />
+                            </div>
+                            <div className='flex items-center justify-center w-12 duration-500 border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 sm:2-14 aspect-square'>
+                                <Image src={"/images/icons/icon_react.svg"} alt='html' width={25} height={20} />
+                            </div>
+                            <div className='flex items-center justify-center w-12 duration-500 border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 sm:2-14 aspect-square'>
+                                <Image src={isDarkMode ? "/images/icons/nextjs.svg" : "/images/icons/icon_nextjs.svg"} alt='html' width={30} height={20} />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2 className='font-bold my-2'>Backend</h2>
+                        <div className='flex items-center gap-2'>
+                            <div className='flex items-center justify-center w-12 duration-500 border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 sm:2-14 aspect-square'>
+                                <Image src={"/images/icons/icon_nodejs.svg"} alt='html' width={25} height={20} />
+                            </div>
+                            <div className='flex items-center justify-center w-12 duration-500 border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 sm:2-14 aspect-square'>
+                                <Image src={"/images/icons/fastApi.svg"} alt='html' width={30} height={20} />
+                            </div>
+                            <div className='flex items-center justify-center w-12 duration-500 border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 sm:2-14 aspect-square'>
+                                <Image src={"/images/icons/icon_firbase.svg"} alt='html' width={30} height={20} />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2 className='font-bold my-2'>Database</h2>
+                        <div className='flex items-center gap-2'>
+                            <div className='flex items-center justify-center w-12 duration-500 border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 sm:2-14 aspect-square'>
+                                <Image src={"/images/icons/icon_mongodb.png"} alt='html' width={16} height={16} />
+                            </div>
+                            <div className='flex items-center justify-center w-12 duration-500 border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 sm:2-14 aspect-square'>
+                                <Image src={"/images/icons/icon_mysql.png"} alt='html' width={40} height={20} />
+                            </div>
+                            <div className='flex items-center justify-center w-12 duration-500 border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 sm:2-14 aspect-square'>
+                                <Image src={"/images/icons/icon_supabase.svg"} alt='html' width={30} height={20} />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2 className='font-bold my-2'>DevOps</h2>
+                        <div className='flex items-center gap-2'>
+                            <div className='flex items-center justify-center w-12 duration-500 border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 sm:2-14 aspect-square'>
+                                <Image src={"/images/icons/icon_cloudrun.svg"} alt='html' width={30} height={16} />
+                            </div>
+                            <div className='flex items-center justify-center w-12 duration-500 border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 sm:2-14 aspect-square'>
+                                <Image src={"/images/icons/icon_docker.svg"} alt='html' width={30} height={20} />
+                            </div>
+                            <div className='flex items-center justify-center w-12 duration-500 border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 sm:2-14 aspect-square'>
+                                <Image src={isDarkMode ? "/images/icons/icon_github.svg"  :   "/images/icons/github-mark.svg"} alt='html' width={30} height={20} />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2 className='font-bold my-2'>Collaboration</h2>
+                        <div className='flex items-center gap-2'>
+                            <div className='flex items-center justify-center w-12 duration-500 border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 sm:2-14 aspect-square'>
+                                <Image src={isDarkMode ?  "/images/icons/icon_notion.svg" : "/images/icons/notion.svg"} alt='html' width={30} height={16} />
+                            </div>
+                            <div className='flex items-center justify-center w-12 duration-500 border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 sm:2-14 aspect-square'>
+                                <Image src={"/images/icons/icon_figma.svg"} alt='html' width={20} height={20} />
+                            </div>
+                            <div className='flex items-center justify-center w-12 duration-500 border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 sm:2-14 aspect-square'>
+                                <Image src={isDarkMode ? "/images/icons/icon_discord.svg" : "/images/icons/discord.svg" } alt='html' width={30} height={20} />
+                            </div>
+                        </div>
+                    </div>
+
+
+            </motion.div>
             </motion.div>
       </motion.div>
   );
